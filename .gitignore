@@ -32,4 +32,4 @@ build/
 ### VS Code ###
 .vscode/
 twitter4j.properties
-twitter-to-kafka-service/twitter-to-kafka-service/*
+*.log
