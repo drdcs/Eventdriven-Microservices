@@ -1,0 +1,178 @@
+2021-12-25 15:07:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.7 on m-c02zg1m3lvcg with PID 44871 (/Users/ddash/Documents/Projects/microservices-event/microservices-demo/twitter-to-kafka-service/target/classes started by ddash in /Users/ddash/Documents/Projects/microservices-event/microservices-demo)
+2021-12-25 15:07:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-25 15:07:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.161 seconds (JVM running for 2.297)
+2021-12-25 15:07:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Ljava.lang.String;@33cbfa57
+2021-12-25 15:10:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.7 on m-c02zg1m3lvcg with PID 54788 (/Users/ddash/Documents/Projects/microservices-event/microservices-demo/twitter-to-kafka-service/target/classes started by ddash in /Users/ddash/Documents/Projects/microservices-event/microservices-demo)
+2021-12-25 15:10:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-25 15:10:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.716 seconds (JVM running for 1.325)
+2021-12-25 15:10:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-12-25 15:12:11 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.7 on m-c02zg1m3lvcg with PID 60988 (/Users/ddash/Documents/Projects/microservices-event/microservices-demo/twitter-to-kafka-service/target/classes started by ddash in /Users/ddash/Documents/Projects/microservices-event/microservices-demo)
+2021-12-25 15:12:11 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-25 15:12:11 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.636 seconds (JVM running for 1.324)
+2021-12-25 15:12:11 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-12-25 15:12:38 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.7 on m-c02zg1m3lvcg with PID 62948 (/Users/ddash/Documents/Projects/microservices-event/microservices-demo/twitter-to-kafka-service/target/classes started by ddash in /Users/ddash/Documents/Projects/microservices-event/microservices-demo)
+2021-12-25 15:12:38 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-25 15:12:39 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.652 seconds (JVM running for 1.213)
+2021-12-25 15:12:39 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-12-25 15:57:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.7 on m-c02zg1m3lvcg with PID 3191 (/Users/ddash/Documents/Projects/microservices-event/microservices-demo/twitter-to-kafka-service/target/classes started by ddash in /Users/ddash/Documents/Projects/microservices-event/microservices-demo)
+2021-12-25 15:57:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-25 15:57:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.791 seconds (JVM running for 1.351)
+2021-12-25 15:57:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-12-25 15:57:01 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-25 15:57:01 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:805)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:786)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:30)
+Caused by: java.lang.IllegalStateException: Authentication credentials are missing. See http://twitter4j.org/en/configuration.html for details. See and register at http://apps.twitter.com/
+	at twitter4j.TwitterBaseImpl.ensureAuthorizationEnabled(TwitterBaseImpl.java:219)
+	at twitter4j.TwitterStreamImpl.filter(TwitterStreamImpl.java:325)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.filterByKeyWords(TwitterKafkaStreamRunner.java:50)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:36)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:37)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:802)
+	... 5 common frames omitted
+2021-12-25 15:57:01 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - closing twitter stream
+2021-12-25 16:00:47 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.7 on m-c02zg1m3lvcg with PID 15545 (/Users/ddash/Documents/Projects/microservices-event/microservices-demo/twitter-to-kafka-service/target/classes started by ddash in /Users/ddash/Documents/Projects/microservices-event/microservices-demo)
+2021-12-25 16:00:47 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-25 16:00:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.588 seconds (JVM running for 1.141)
+2021-12-25 16:00:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-12-25 16:00:48 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-25 16:00:48 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:805)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:786)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:30)
+Caused by: java.lang.IllegalStateException: Authentication credentials are missing. See http://twitter4j.org/en/configuration.html for details. See and register at http://apps.twitter.com/
+	at twitter4j.TwitterBaseImpl.ensureAuthorizationEnabled(TwitterBaseImpl.java:219)
+	at twitter4j.TwitterStreamImpl.filter(TwitterStreamImpl.java:325)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.filterByKeyWords(TwitterKafkaStreamRunner.java:50)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:36)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:37)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:802)
+	... 5 common frames omitted
+2021-12-25 16:00:48 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - closing twitter stream
+2021-12-25 16:01:04 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.7 on m-c02zg1m3lvcg with PID 16336 (/Users/ddash/Documents/Projects/microservices-event/microservices-demo/twitter-to-kafka-service/target/classes started by ddash in /Users/ddash/Documents/Projects/microservices-event/microservices-demo)
+2021-12-25 16:01:04 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-25 16:01:05 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.669 seconds (JVM running for 1.395)
+2021-12-25 16:01:05 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-12-25 16:01:05 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-25 16:01:05 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:805)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:786)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:30)
+Caused by: java.lang.IllegalStateException: Authentication credentials are missing. See http://twitter4j.org/en/configuration.html for details. See and register at http://apps.twitter.com/
+	at twitter4j.TwitterBaseImpl.ensureAuthorizationEnabled(TwitterBaseImpl.java:219)
+	at twitter4j.TwitterStreamImpl.filter(TwitterStreamImpl.java:325)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.filterByKeyWords(TwitterKafkaStreamRunner.java:50)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:36)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:37)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:802)
+	... 5 common frames omitted
+2021-12-25 16:01:05 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - closing twitter stream
+2021-12-25 16:03:46 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.7 on m-c02zg1m3lvcg with PID 25627 (/Users/ddash/Documents/Projects/microservices-event/microservices-demo/twitter-to-kafka-service/target/classes started by ddash in /Users/ddash/Documents/Projects/microservices-event/microservices-demo)
+2021-12-25 16:03:46 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-25 16:03:46 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.825 seconds (JVM running for 1.972)
+2021-12-25 16:03:46 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-12-25 16:06:49 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-25 16:06:49 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:805)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:786)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:30)
+Caused by: java.lang.IllegalStateException: Authentication credentials are missing. See http://twitter4j.org/en/configuration.html for details. See and register at http://apps.twitter.com/
+	at twitter4j.TwitterBaseImpl.ensureAuthorizationEnabled(TwitterBaseImpl.java:219)
+	at twitter4j.TwitterStreamImpl.filter(TwitterStreamImpl.java:325)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.filterByKeyWords(TwitterKafkaStreamRunner.java:50)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:36)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:37)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:802)
+	... 5 common frames omitted
+2021-12-25 16:06:49 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - closing twitter stream
+2021-12-25 16:06:57 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.7 on m-c02zg1m3lvcg with PID 35587 (/Users/ddash/Documents/Projects/microservices-event/microservices-demo/twitter-to-kafka-service/target/classes started by ddash in /Users/ddash/Documents/Projects/microservices-event/microservices-demo)
+2021-12-25 16:06:57 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-25 16:06:57 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.648 seconds (JVM running for 1.226)
+2021-12-25 16:06:57 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-12-25 16:06:57 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-12-25 16:06:57 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - started filtering twitter stream for configured keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-12-25 16:06:59 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
+2021-12-25 16:06:59 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
+2021-12-25 16:06:59 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Hello all,
+In this blog post, me and @YacineZidelmal are explaining from a high level how to go with your microservices to a production environment. 
+https://t.co/oTT3G1QQ5j
+
+Visit my blog for more articles like this: https://t.co/cY485vm08E
+
+#microservice #deploy #devops
+2021-12-25 16:06:59 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ajalburaidi: Detecting Log4j exploits via Zeek when Java downloads Java #Cybersecurity #infosec #security via https://t.co/mCSnWIIocG h…
+2021-12-25 16:06:59 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text (SR) Spring Slumber https://t.co/UmjywbeqAP
+2021-12-25 16:07:00 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text 開始1秒でめっちゃくちゃいいじゃねえか涙涙  Spring Day / 봄날 japanese ver.  〔日本語字幕〕 https://t.co/1FZ2iWTEEp @YouTubeより
+2021-12-25 16:07:01 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @Final_Japrime @joshu_junkii Buy Minecraft Java Edition PC CD Key
+From this link : https://t.co/YL6LwVo7WJ
+2021-12-25 16:07:02 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Hackveda: What are the key architectural differences between Azure Event Hub .... Please Retweet & Follow @hackveda #100daysofcode #azu…
+2021-12-25 16:07:03 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @SlCathy Absolutely agree, Cathy x looking forward to meeting in person at last in the spring x
+2021-12-25 16:07:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @ihuzineimori Javaっていうプログラミング言語は受験関係ないで
+2021-12-25 16:07:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @JoelKatz For xmas eve? Geez I got them on spring break... Merry Christmas David!
+2021-12-25 16:07:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text 《 #GOLD 》 2022 Spring＆Summer 店頭展示受注会 開催のお知らせ
+
+►https://t.co/mEO4AfTdvv
+
+#gold #ゴールド #22ss #受注会 #春服 #夏服 #メンズコーデ #レディースコーデ #通販 #栃木 #群馬 #埼玉 #セレクトショップ https://t.co/XLJWnFRBxI
+2021-12-25 16:07:06 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Hackveda: What are the key architectural differences between Azure Event Hub .... Please Retweet & Follow @hackveda #100daysofcode #azu…
+2021-12-25 16:07:06 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @BlackWhiskey3: Young Jae (BAP) คอนเฟิร์มว่าเขาจะได้รับบทนำร่วมกับนักแสดง Kim Song ใน #춘정지란 "Spring of Crush" ที่สร้างจากเว็บตูนยอดฮิต เ…
+2021-12-25 16:07:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @MurphyJenCubs @JustStacie5683 Not here. It's 54 F this morning.  Feels like spring. 🙃
+Morning, Jennifer 🤗
+2021-12-25 16:07:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @endpc2 Buy Minecraft Java Edition PC CD Key
+From this link : https://t.co/YL6LwVo7WJ
+2021-12-25 16:07:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @nuicemedia: -New cases
+Jakarta: 80
+Riau Islands: 65
+West Java: 18
+Central Java: 18
+West Papua: 18
+
+-Deaths
+Central Java: 2
+East Java: 2…
+2021-12-25 16:07:10 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @VictorianFeatu1 They havent advised me of anything yet but these could be the possibilities. Well, mine is extended until April so I might start in Spring.
+2021-12-25 16:07:16 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @TehPitchMaker Buy Minecraft Java Edition PC CD Key
+From this link : https://t.co/YL6LwVo7WJ
+2021-12-25 16:07:18 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @profnfenton: 5. More worrying is that a close friend who had very severe Covid in Spring 2020 (and therefore subsequently had natural i…
+2021-12-25 16:07:20 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text 'Inside the café, a Gaggia coffee machine operated at full steam. Out of it gurgled runnels of a dark, bubbling, black gold.' 
+
+From my short story 'Kafka's Cafe'.
+2021-12-25 16:07:21 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @iMONNIELAB: Belki de insanların bunu “prim” olarak kullanmalarından endişelendiler. Spring Day sadece bir şarkı değil, bir hayat hikaye…
+2021-12-25 16:07:21 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CodingPseudo: AWS Certified Advanced Networking - Specialty Certification
+
+https://t.co/syZsava0AZ
+
+#udemy #udemyfree #AWS #AWSMRadio #…
+2021-12-25 16:07:21 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @convomf psikiater. hbs nonton you are my spring
+2021-12-25 16:07:23 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Hackveda: What are the key architectural differences between Azure Event Hub .... Please Retweet & Follow @hackveda #100daysofcode #azu…
+2021-12-25 16:07:23 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SagarMisra15: All men's misfortunes spring from their hatred of being alone.
+
+WE WATCH BB15 FOR PRATIK
+2021-12-25 16:07:24 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @8chikitaflower9 Buy Minecraft Java Edition PC CD Key
+From this link : https://t.co/YL6LwVo7WJ
+2021-12-25 16:07:26 [SpringApplicationShutdownHook] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - closing twitter stream
