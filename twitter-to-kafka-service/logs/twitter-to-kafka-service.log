@@ -186,3 +186,10 @@ From this link : https://t.co/YL6LwVo7WJ
 2021-12-25 17:26:55 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text city United States complete with street Generate city state Spring complete with street state fake zip
 2021-12-25 17:27:05 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Generate codes codes zip United States Spring address fake city
 2021-12-25 17:27:15 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text fake city zip address codes state Microservices United States fake state address state
+2021-12-25 22:02:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.7 on m-c02zg1m3lvcg with PID 6037 (/Users/ddash/Documents/Projects/microservices-event/microservices-demo/twitter-to-kafka-service/target/classes started by ddash in /Users/ddash/Documents/Projects/microservices-event/microservices-demo)
+2021-12-25 22:02:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-25 22:02:26 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.0 seconds (JVM running for 1.895)
+2021-12-25 22:02:26 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-12-25 22:02:26 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - started mock filtering twitter stream [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-12-25 22:02:26 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text zip state complete with street complete with street address address Java fake United States state Generate Generate
+2021-12-25 22:02:36 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text address zip United States zip Java Generate complete with street
