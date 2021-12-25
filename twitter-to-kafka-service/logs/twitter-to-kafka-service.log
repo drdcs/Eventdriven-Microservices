@@ -176,3 +176,13 @@ WE WATCH BB15 FOR PRATIK
 2021-12-25 16:07:24 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @8chikitaflower9 Buy Minecraft Java Edition PC CD Key
 From this link : https://t.co/YL6LwVo7WJ
 2021-12-25 16:07:26 [SpringApplicationShutdownHook] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - closing twitter stream
+2021-12-25 17:26:34 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.7 on m-c02zg1m3lvcg with PID 17825 (/Users/ddash/Documents/Projects/microservices-event/microservices-demo/twitter-to-kafka-service/target/classes started by ddash in /Users/ddash/Documents/Projects/microservices-event/microservices-demo)
+2021-12-25 17:26:34 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-12-25 17:26:35 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.827 seconds (JVM running for 1.491)
+2021-12-25 17:26:35 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-12-25 17:26:35 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - started mock filtering twitter stream [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-12-25 17:26:35 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text address fake codes fake zip fake address fake Java Generate zip address Generate codes Generate
+2021-12-25 17:26:45 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text city fake city address address Kafka fake codes address address
+2021-12-25 17:26:55 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text city United States complete with street Generate city state Spring complete with street state fake zip
+2021-12-25 17:27:05 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Generate codes codes zip United States Spring address fake city
+2021-12-25 17:27:15 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text fake city zip address codes state Microservices United States fake state address state
